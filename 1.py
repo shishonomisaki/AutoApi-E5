@@ -17,7 +17,7 @@ def gettoken(refresh_token):
           'refresh_token': refresh_token,
           'client_id':id,
           'client_secret':secret,
-          'redirect_uri':'http://localhost:53682/'
+          'redirect_uri':'http://localhost:54564/'
          }
     html = req.post('https://login.microsoftonline.com/common/oauth2/v2.0/token',data=data,headers=headers)
     jsontxt = json.loads(html.text)
@@ -78,5 +78,3 @@ def main():
 for _ in range(3):
     main()
 
-requests.get('https://sc.ftqq.com/SCT89749TUALbuyC7wr58Oh3Y6dLOeLjF.send?text=E5续期调用API权限10次运行完毕（163）')
-requests.get('http://www.pushplus.plus/send?token=d0a4e6c474344cff9e9fd9ff5449b1a4&title=163&content=E5续期调用API权限10次运行完毕')
